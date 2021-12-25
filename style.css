@@ -9,6 +9,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: black;
 }
 .main{
 	position: relative;
@@ -17,7 +18,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(to right, #5D6D7E, #566573);
+	background: linear-gradient(to right, #000000, #333373);
 }
 .main button{
 	padding: 10px 12px;
@@ -43,14 +44,6 @@ body{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
-
-/* song image */
-.left img{
-	height: 300px;
-	width: 80%;
-	border-radius: 15px;
-	box-shadow: 1px 0px 20px 12px rgba(240,240,240,0.2);
 }
 
 /* both range slider part */
@@ -131,7 +124,6 @@ input[type="range"]::-webkit-slider-thumb{
 	top: 60px;
 	left: 50%;
 	transform: translateX(-50%);
-	text-transform: capitalize;
 	color: #fff;
 	font-size: 35px;
 }
@@ -140,7 +132,6 @@ input[type="range"]::-webkit-slider-thumb{
 	top: 110px;
 	left: 50%;
 	transform: translateX(-50%);
-	text-transform: capitalize;
 	color: #fff;
 	font-size: 18px;
 }
@@ -168,7 +159,7 @@ input[type="range"]::-webkit-slider-thumb{
 	border: none;
 	padding: 10px 14px;
 	color: #fff;
-	background: rgba(255,255,255,0.2);
+	background: #FF8A65;
 	outline: none;
 	border-radius: 10px;
 }

@@ -6,7 +6,6 @@ let recent_volume= document.querySelector('#volume');
 let volume_show = document.querySelector('#volume_show');
 let slider = document.querySelector('#duration_slider');
 let show_duration = document.querySelector('#show_duration');
-let track_image = document.querySelector('#track_image');
 let auto_play = document.querySelector('#auto');
 let present = document.querySelector('#present');
 let total = document.querySelector('#total');
@@ -15,7 +14,7 @@ let artist = document.querySelector('#artist');
 
 
 let timer;
-let autoplay = 0;
+let autoplay = 1;
 
 let index_no = 0;
 let Playing_song = false;
@@ -27,34 +26,49 @@ let track = document.createElement('audio');
 //All songs list
 let All_song = [
    {
-     name: "first song",
-     path: "music/song1.mp3",
-     img: "img/img1.jpg",
-     singer: "1"
+		name: "少年",
+		path: "music/song1.mp3",
+		singer: "夢然 (Mira)"
    },
    {
-     name: "second song",
-     path: "music/song2.mp3",
-     img: "img/img2.jpg",
-     singer: "2"
+		name: "热爱105C的你",
+		path: "music/song2.mp3",
+		singer: "阿肆"
    },
    {
-     name: "third song",
-     path: "music/song3.mp3",
-     img: "img/img3.jpg",
-     singer: "3"
+		name: "执念",
+		path: "music/song3.mp3",
+		singer: "南征北战"
    },
    {
-     name: "fourth song",
-     path: "music/song4.mp3",
-     img: "img/img4.jpg",
-     singer: "4"
+		name: "海草舞",
+		path: "music/song4.mp3",
+		singer: "蕭全"
    },
    {
-     name: "fifth song",
-     path: "music/song5.mp3",
-     img: "img/img5.jpg",
-     singer: "5"
+		name: "孤獨為榮",
+		path: "music/song5.mp3",
+		singer: "伊晗"
+   },
+   {
+		name: "還記得我嗎",
+		path: "music/song6.mp3",
+		singer: "劉增瞳"
+   },
+   {
+		name: "想要對你說",
+		path: "music/song7.mp3",
+		singer: "彈唱小蓉"
+   },
+   {
+		name: "任然",
+		path: "music/song8.mp3",
+		singer: "飛鳥和蟬"
+   },
+   {
+		name: "大田後生仔",
+		path: "music/song9.mp3",
+		singer: "丫蛋蛋"
    }
 ];
 
@@ -68,8 +82,7 @@ function load_track(index_no){
 	reset_slider();
 
 	track.src = All_song[index_no].path;
-	title.innerHTML = All_song[index_no].name;	
-	track_image.src = All_song[index_no].img;
+	title.innerHTML = All_song[index_no].name;
     artist.innerHTML = All_song[index_no].singer;
     track.load();
 
@@ -78,6 +91,7 @@ function load_track(index_no){
 	present.innerHTML = index_no + 1;
 }
 
+volume_change();
 load_track(index_no);
 
 
@@ -143,7 +157,7 @@ function previous_song(){
 		playsong();
 
 	}else{
-		index_no = All_song.length;
+		index_no = All_song.length-1;
 		load_track(index_no);
 		playsong();
 	}
