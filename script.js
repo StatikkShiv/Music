@@ -62,18 +62,13 @@ let All_song = [
 		singer: "飛鳥和蟬"
 	},
 	{
-		name: "大田後生仔",
-		path: "music/song9.mp3",
-		singer: "丫蛋蛋"
-	},
-	{
 		name: "你的答案",
-		path: "music/song10.mp3",
+		path: "music/song9.mp3",
 		singer: "阿冗"
 	},
 	{
 		name: "造亿万吨光芒",
-		path: "music/song11.mp3",
+		path: "music/song10.mp3",
 		singer: "奔跑吧3"
 	}
 ];
@@ -108,7 +103,6 @@ function justplay()
 	if(Playing_song==false)
 	{
 		playsong();
-
 	}
 	else
 	{
