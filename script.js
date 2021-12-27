@@ -70,6 +70,31 @@ let All_song = [
 		name: "造亿万吨光芒",
 		path: "music/song10.mp3",
 		singer: "奔跑吧3"
+	},
+	{
+		name: "你的重要",
+		path: "music/song11.mp3",
+		singer: "馬馬"
+	},
+	{
+		name: "白月光與朱砂痣",
+		path: "music/song12.mp3",
+		singer: "胖虎"
+	},
+	{
+		name: "錯位時空",
+		path: "music/song13.mp3",
+		singer: "艾辰"
+	},
+	{
+		name: "勇氣",
+		path: "music/song14.mp3",
+		singer: "棉子"
+	},
+	{
+		name: "明天你好",
+		path: "music/song15.mp3",
+		singer: "牛奶咖啡"
 	}
 ];
 
