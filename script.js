@@ -95,6 +95,11 @@ let All_song = [
 		name: "明天你好",
 		path: "music/song15.mp3",
 		singer: "牛奶咖啡"
+	},
+	{
+		name: "Falling You",
+		path: "music/FallingYou.mp3",
+		singer: "张婧仪 陈飞宇"
 	}
 ];
 
