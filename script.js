@@ -22,6 +22,11 @@ let track = document.createElement('audio');
 //All songs list
 let All_song = [
 	{
+		name: "Falling You",
+		path: "music/FallingYou.mp3",
+		singer: "张婧仪 陈飞宇"
+	},
+	{
 		name: "少年",
 		path: "music/song1.mp3",
 		singer: "夢然 (Mira)"
@@ -97,9 +102,9 @@ let All_song = [
 		singer: "牛奶咖啡"
 	},
 	{
-		name: "Falling You",
-		path: "music/FallingYou.mp3",
-		singer: "张婧仪 陈飞宇"
+		name: "為你寫下這首情歌",
+		path: "music/song16.mp3",
+		singer: "五月天 鄧紫棋"
 	}
 ];
 
